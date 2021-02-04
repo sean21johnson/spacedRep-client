@@ -1,0 +1,47 @@
+.LoginForm {
+    padding-top: 30px;
+}
+
+.login_form_item {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button {
+    padding: 5px 15px;
+    font-size: 22px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+
+.login_button_div {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+@media all and (min-width: 800px) {
+    .LoginForm {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .login_form_item {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    #login-username-input {
+        margin-left: 100px;
+    }
+
+    #login-password-input {
+        margin-left: 105px;
+    }
+
+}
