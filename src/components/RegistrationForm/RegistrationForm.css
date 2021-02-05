@@ -68,6 +68,12 @@ button.registration_submit {
 	font-family: sans-serif;
 }
 
+.alert {
+	text-align: center;
+	padding-bottom: 30px;
+	color: red;
+}
+
 @media all and (min-width: 800px) {
 	.registration_form {
 		margin-left: auto;

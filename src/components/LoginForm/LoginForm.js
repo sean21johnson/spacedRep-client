@@ -45,7 +45,7 @@ class LoginForm extends Component {
 		const { error } = this.state;
 		return (
 			<form className="LoginForm" onSubmit={this.handleSubmit}>
-				<div role="alert">{error && <p>{error}</p>}</div>
+				<div className="alert" role="alert">{error && <p>{error}</p>}</div>
 				<div className="login_form_item">
 					<Label htmlFor="login-username-input">Username</Label>
 					<Input
