@@ -1,0 +1,45 @@
+.whats_translation {
+	text-align: center;
+	margin-top: 25px;
+	font-family: sans-serif;
+}
+
+input#learn-guess-input {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.submit_answer_button {
+	text-align: center;
+}
+
+.answer_display_total_score {
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+
+.results_header {
+	font-size: 22px;
+}
+
+.DisplayFeedback {
+	text-align: center;
+	margin-top: 30px;
+	font-family: sans-serif;
+	margin-bottom: 30px;
+}
+
+.another_word_button {
+	text-align: center;
+}
+
+@media all and (min-width: 800px) {
+	.translation_group {
+		text-align: center;
+	}
+
+	input#learn-guess-input {
+		margin-left: 15px;
+	}
+}

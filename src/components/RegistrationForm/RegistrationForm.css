@@ -1,121 +1,118 @@
 .paragraph_practice {
-   font-family: sans-serif;
-   font-size: 20px; 
-   margin: 10px;
-   text-align: center;
-   font-style:italic;
-   padding-top: 10px;
-   color: rgb(82, 82, 82);
-   border-bottom: dotted grey;
-   padding-bottom: 20px;
+	font-family: sans-serif;
+	font-size: 20px;
+	margin: 10px;
+	text-align: center;
+	font-style: italic;
+	padding-top: 10px;
+	color: rgb(82, 82, 82);
+	border-bottom: dotted grey;
+	padding-bottom: 20px;
 }
 
 h2 {
-    text-align: center;
-    font-family: sans-serif;
-    font-variant-caps: petite-caps;
-    font-size: 28px;
-    margin-top: 30px;
+	text-align: center;
+	font-family: sans-serif;
+	font-variant-caps: petite-caps;
+	font-size: 28px;
+	margin-top: 30px;
 }
 
-
 label {
-    font-size: 20px;
-    margin-left: 10px;
-    font-family: sans-serif;
-    padding-top: 8px;
-    /* padding-left: 5px; */
+	font-size: 20px;
+	margin-left: 10px;
+	font-family: sans-serif;
+	padding-top: 8px;
 }
 
 input {
-    margin-right: 10px;
-    padding: 10px;
+	margin-right: 10px;
+	padding: 10px;
 }
 
 .registration_form {
-    padding-top: 30px;
+	padding-top: 30px;
 }
 
 .registration_item {
-    margin-bottom: 35px;
-    display: flex;
-    justify-content: space-between
+	margin-bottom: 35px;
+	display: flex;
+	justify-content: space-between;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 70px;
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
 }
 
 button.registration_submit {
-    padding: 5px;
-    font-size: 22px;
-    border-radius: 5px;
-    color: white;
-    background-color: black;
-    margin-bottom: 30px;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
+	padding: 5px;
+	font-size: 22px;
+	border-radius: 5px;
+	color: white;
+	background-color: black;
+	margin-bottom: 30px;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .login_link {
-    text-align: center;
-    font-size: 18px;
-    color: black;
-    font-family: sans-serif;
+	text-align: center;
+	font-size: 18px;
+	color: black;
+	font-family: sans-serif;
 }
 
 @media all and (min-width: 800px) {
-    .registration_form {
-        margin-left: auto;
-        margin-right: auto;
-    }
+	.registration_form {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-    .registration_item {
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-    }
+	.registration_item {
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+	}
 
-    .paragraph_practice {
-        margin-top: 30px;
-        padding-bottom: 40px;
-    }
+	.paragraph_practice {
+		margin-top: 30px;
+		padding-bottom: 40px;
+	}
 
-    h2 {
-        font-size: 35px;
-    }
+	h2 {
+		font-size: 35px;
+	}
 
-    button {
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 25px;
-        padding: 5px;
-    }
+	button {
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 25px;
+		padding: 5px;
+	}
 
-    .login_link {
-        margin-bottom: 30px;
-    }
+	.login_link {
+		margin-bottom: 30px;
+	}
 
-    label {
-        text-align: center;
-    }
+	label {
+		text-align: center;
+	}
 
-    #registration-name-input {
-        margin-left: 80px;
-    }
+	#registration-name-input {
+		margin-left: 80px;
+	}
 
-    #registration-username-input {
-        margin-left: 48px;
-    }
+	#registration-username-input {
+		margin-left: 48px;
+	}
 
-    #registration-password-input {
-        margin-left: 50px;
-    }
-
+	#registration-password-input {
+		margin-left: 50px;
+	}
 }

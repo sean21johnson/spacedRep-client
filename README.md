@@ -1,47 +1,24 @@
-# Spaced Repetition Capstone
+# Spaced Repetition App - Client
 
-## Setup
+[Live App]()
 
-To setup the application
+[Server-side Repo](https://github.com/sean21johnson/spacedRep-server)
 
-1. Fork and clone the project to your machine
-2. `npm install`. This will also install the application *Cypress.io* for running browser integration tests
+---
 
-The project expects you have the Spaced repetition API project setup and running on http://localhost:8000.
+### Learn Spanish with the spaced repetition technique!
 
-Find instructions to setup the API here https://github.com/Thinkful-Ed/spaced-repetition-api.
+This application was created to help users learn Spanish using spaced repetition. Spaced repetition is a powerful learning technique with proven results. Users are presented words which they need to guess the translation for. For a given word, the more often you guess it right, the less often it will appear. And the more often you guess it wrong, the more often it will appear. This pattern helps users hone in on words they are having more trouble with. This process is accomplished using a linked list data structure in the server-side application. The client-side application also uses conditional rendering to show the users scores and the correct translation for a word after a user guess.
 
-## Running project
+### Tech Stacl
 
-This is a `create-react-app` project so `npm start` will start the project in development mode with hot reloading by default.
+Created with:
 
-## Running the tests
-
-This project uses [Cypress IO](https://docs.cypress.io) for integration testing using the Chrome browser.
-
-Cypress has the following expectations:
-
-- You have cypress installed (this is a devDependency of the project)
-- You have your application running at http://localhost:3000.
-  - You can change the address of this expectation in the `./cypress.json` file.
-- Your `./src/config.js` is using http://localhost:8000/api as the `API_ENDPOINT`
-
-To start the tests run the command:
-
-```bash
-npm run cypress:open
-```
-
-On the first run of this command, the cypress application will verify its install. Any other runs after this, the verification will be skipped.
-
-The command will open up the Cypress application which reads tests from the `./cypress/integration/` directory. You can then run individual tests by clicking on the file names or run all tests by clicking the "run all tests" button in the cypress GUI.
-
-Tests will assert against your running localhost client application.
-
-You can also start all of the tests in the command line only (not using the GUI) by running the command:
-
-```bash
-npm run cypress:run
-```
-
-This will save video recordings of the test runs in the directory `./cypress/videos/`.
+<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
+<img align="left" alt="HTML5" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />
+<img align="left" alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img align="left" alt="CSS3" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" />
+<img align="left" alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
+<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
+<img align="left" alt="React Router" src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" />  

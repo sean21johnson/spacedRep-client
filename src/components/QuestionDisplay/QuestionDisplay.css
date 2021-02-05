@@ -1,0 +1,32 @@
+.question_item {
+	display: flex;
+	justify-content: center;
+}
+
+.translation_word {
+	margin-top: 34px;
+	margin-left: 10px;
+	font-size: 20px;
+	font-family: sans-serif;
+	color: red;
+}
+
+h2.translate_word {
+	font-size: 25px;
+}
+
+.DisplayScore {
+	font-style: italic;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
+.translation_group {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	margin-left: 10px;
+	font-family: sans-serif;
+	padding: 10px;
+	margin-right: 10px;
+}

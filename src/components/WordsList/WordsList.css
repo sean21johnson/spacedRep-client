@@ -1,95 +1,95 @@
 .total_correct {
-    font-family: sans-serif;
-    text-align: center;
-    font-style: italic;
+	font-family: sans-serif;
+	text-align: center;
+	font-style: italic;
 }
 
 .total_correct_div {
-    border-bottom: 1px dotted grey;
+	border-bottom: 1px dotted grey;
 }
 
 h2.language_header {
-    margin-top: 15px;
-    margin-bottom: 5px;
+	margin-top: 15px;
+	margin-bottom: 5px;
 }
 
 .practice_words {
-    text-align: center;
-    font-family: sans-serif;
-    background-color:grey;
-    color: white;
-    padding: 5px;
-    margin-left: 110px;
-    margin-right: 110px;
-    border-radius: 10px;
-    text-shadow: 2px 2px black;
-    font-size: 20px;
+	text-align: center;
+	font-family: sans-serif;
+	background-color: grey;
+	color: white;
+	padding: 5px;
+	margin-left: 110px;
+	margin-right: 110px;
+	border-radius: 10px;
+	text-shadow: 2px 2px black;
+	font-size: 20px;
 }
 
 ul {
-    list-style-type: none;
+	list-style-type: none;
 }
 
-p.correct_paragraph, p.incorrect_paragraph {
-    font-family: sans-serif;
-    text-align: center;
-    font-style: italic;
-
+p.correct_paragraph,
+p.incorrect_paragraph {
+	font-family: sans-serif;
+	text-align: center;
+	font-style: italic;
 }
 
 li {
-    border: 1px grey dotted;
-    padding: 10px;
-    margin-right: 40px;
-    border-radius: 5px;
-    background-color: azure;
-    margin-bottom: 10px;
+	border: 1px grey dotted;
+	padding: 10px;
+	margin-right: 40px;
+	border-radius: 5px;
+	background-color: azure;
+	margin-bottom: 10px;
 }
 
 h4 {
-    text-decoration: underline;
-    text-align: center;
-    margin: 5px;
-    color: red;
+	text-decoration: underline;
+	text-align: center;
+	margin: 5px;
+	color: red;
 }
 
 .start_practicing_div {
-    text-align: center;
-    margin: 40px;
+	text-align: center;
+	margin: 40px;
 }
 
 @media all and (min-width: 800px) {
-    h2.language_header {
-        font-size: 45px;
-    }
+	h2.language_header {
+		font-size: 45px;
+	}
 
-    p.total_correct {
-        font-size: 22px;
-    }
+	p.total_correct {
+		font-size: 22px;
+	}
 
-    h3.practice_words {
-        width: 25%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 30px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
+	h3.practice_words {
+		width: 25%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 30px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
 
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
 
-    .dashboard_contents_div {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+	.dashboard_contents_div {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-    li {
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
+	li {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
 }

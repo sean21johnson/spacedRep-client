@@ -1,59 +1,60 @@
-import React, { Component } from 'react';
-import UserContext from './../../contexts/UserContext';
-import Button from '../Button/Button';
+import React, { Component } from "react";
+import UserContext from "./../../contexts/UserContext";
+import Button from "../Button/Button";
 
 class AnswerDisplay extends Component {
-    static defaultProps = {
-        onClick: () => {}
-    }
+	static defaultProps = {
+		onClick: () => {},
+	};
 
-    static contextType = UserContext;
+	static contextType = UserContext;
 
-    showCorrect(isCorrect) {
-        let correctAnswer = isCorrect
-        ? `You were correct! :D` : `Good try, but not quite right :(`
+	showCorrect(isCorrect) {
+		let correctAnswer = isCorrect
+			? `You were correct! :D`
+			: `Good try, but not quite right :(`;
 
-        return (
-            <>
-                <div className="item">
-                    <h2 className="results_header">{correctAnswer}</h2>
-                </div>
-            </>
-        )
-    }
+		return (
+			<>
+				<div className="item">
+					<h2 className="results_header">{correctAnswer}</h2>
+				</div>
+			</>
+		);
+	}
 
-    showNext(correctAnswer) {
-        console.log(this.context)
-        let { answer } = this.context;
-        let theWord = correctAnswer ? answer.nextWord : answer.answer;
-        let paragraph = correctAnswer ? 'Next word: ' : `The correct translation for ${this.context.words.words[0].original} was ${theWord} and you chose ${this.context.currentGuess}`
+	showNext() {
+		let { answer } = this.context;
 
-        return <p className="DisplayScore">{paragraph}
-            {/* <span className='translation_class'>{theWord || 'word'} was {correctAnswer}</span>  */}
-        </p>
-    }
+		let paragraph = `The correct translation for ${this.context.lastWord.nextWord} was ${answer.answer} and you chose ${this.context.currentGuess}!`;
 
-    render() { 
-        let { isCorrect = 'false', wordCorrectCount, wordIncorrectCount, answer, totalScore } = this.context.answer;
+		return (
+			<div className="DisplayFeedback">
+				<p>{paragraph}</p>
+			</div>
+		);
+	}
 
-        return (
-            <>  
-            <div className="answer_group">
-                {this.showCorrect(isCorrect)}
-                <div className="answer_item">
-                    <p className="answer_group_score">Your total score is: {totalScore}</p>
-                    <p>Scores for {answer}</p>
-                    <p>{wordCorrectCount} correct {' & '} {wordIncorrectCount} incorrect</p>
-                </div>
-            </div>
-            <div className='answer_group_next_answer'>
-                {this.showNext(isCorrect)}
-            </div>
+	render() {
+		let { isCorrect = "false", totalScore } = this.context.answer;
 
-            <Button onClick={() => this.props.onNextUp()}>Try another word!</Button>
-            </>    
-        );
-    }
+		return (
+			<>
+				<div className="answer_group">{this.showCorrect(isCorrect)}</div>
+				<div className="answer_group_next_answer">{this.showNext()}</div>
+				<div className="answer_item DisplayScore">
+					<p className="answer_display_total_score">
+						Your total score is: {totalScore}
+					</p>
+				</div>
+				<div className="another_word_button">
+					<Button onClick={() => this.props.onNextUp()}>
+						Try another word!
+					</Button>
+				</div>
+			</>
+		);
+	}
 }
- 
+
 export default AnswerDisplay;
