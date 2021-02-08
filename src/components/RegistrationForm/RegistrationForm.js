@@ -14,6 +14,8 @@ class RegistrationForm extends Component {
 
 	firstInput = React.createRef();
 
+
+	// WORKED ORIGINALLY
 	handleSubmit = (ev) => {
 		ev.preventDefault();
 		const { name, username, password } = ev.target;

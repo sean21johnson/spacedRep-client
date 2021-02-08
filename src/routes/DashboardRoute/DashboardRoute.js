@@ -31,11 +31,6 @@ class DashboardRoute extends Component {
 				<div className="total_correct_div">
 					<p className="total_correct">Total correct answers: {score}</p>
 				</div>
-				<div>
-					<h3 className="practice_words">Words to practice</h3>
-				</div>
-				<div className="dashboard_contents_div">
-					<WordsList />
 					<div className="start_practicing_div">
 						<Link to="/learn">
 							<button className="start_practicing_button">
@@ -43,7 +38,12 @@ class DashboardRoute extends Component {
 							</button>
 						</Link>
 					</div>
+				<div>
+					<h3 className="practice_words">Words to practice</h3>
 				</div>
+					<div className="dashboard_contents_div">
+					<WordsList />
+					</div>
 			</section>
 		);
 	}
