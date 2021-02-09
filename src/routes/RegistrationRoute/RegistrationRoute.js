@@ -14,13 +14,11 @@ class RegistrationRoute extends Component {
 
 	//WORKED ORIGINALLY
 	handleRegistrationSuccess = (username, password) => {
-		console.log(username, password)
 		AuthApiService.postLogin({
 			username,
 			password,
 		})
 			.then((res) => {
-				console.log(res.authToken)
 				this.context.processLogin(res.authToken);
 				this.context.handleLoginSuccess(this.props.history, this.props.location);
 			})
