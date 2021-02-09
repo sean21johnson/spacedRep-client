@@ -17,6 +17,7 @@ const UserContext = React.createContext({
 	setWords: () => {},
 	setHead: () => {},
 	setNewWord: () => {},
+	handleLoginSuccess: () => {}
 });
 
 export default UserContext;
@@ -54,6 +55,11 @@ export class UserProvider extends Component {
 			});
 		}
 	}
+
+	handleLoginSuccess = (history, location) => {
+		const destination = (location.state || {}).from || "/";
+		history.push(destination);
+	};
 
 	componentWillUnmount() {
 		IdleService.unRegisterIdleResets();
@@ -153,6 +159,7 @@ export class UserProvider extends Component {
 			setAnswer: this.setAnswer,
 			setCurrentGuess: this.setCurrentGuess,
 			setNewWord: this.setNewWord,
+			handleLoginSuccess: this.handleLoginSuccess
 		};
 		return (
 			<UserContext.Provider value={value}>

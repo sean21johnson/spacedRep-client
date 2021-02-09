@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import RegistrationForm from "../../components/RegistrationForm/RegistrationForm";
+import AuthApiService from './../../services/auth-api-service';
+import UserContext from './../../contexts/UserContext';
 
 class RegistrationRoute extends Component {
 	static defaultProps = {
@@ -8,10 +10,23 @@ class RegistrationRoute extends Component {
 		},
 	};
 
+	static contextType = UserContext;
+
 	//WORKED ORIGINALLY
-	handleRegistrationSuccess = () => {
-		const { history } = this.props;
-		history.push("/login");
+	handleRegistrationSuccess = (username, password) => {
+		console.log(username, password)
+		AuthApiService.postLogin({
+			username,
+			password,
+		})
+			.then((res) => {
+				console.log(res.authToken)
+				this.context.processLogin(res.authToken);
+				this.context.handleLoginSuccess(this.props.history, this.props.location);
+			})
+			.catch((res) => {
+				this.setState({ error: res.error });
+			});
 	};
 
 
