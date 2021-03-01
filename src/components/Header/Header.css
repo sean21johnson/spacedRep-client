@@ -32,8 +32,9 @@ nav {
 	text-decoration: none;
 }
 
-.loggedin_user {
+.loggedin_user, .login_login {
 	padding-right: 20px;
+
 }
 
 @media all and (min-width: 1000px) {
@@ -48,14 +49,11 @@ nav {
 
 	nav {
 		padding-right: 30px;
-	}
-
-	.loggedin_user {
-		padding-right: 50px;
-	}
-
-	nav {
 		font-size: 20px;
+	}
+
+	.loggedin_user, .login_login {
+		padding-right: 50px;
 	}
 }
 
